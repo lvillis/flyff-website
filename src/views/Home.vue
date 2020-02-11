@@ -2,7 +2,7 @@
   <div class="home">
 
 
-    <div class="banner">f
+    <div class="banner">
     </div>
 
 
