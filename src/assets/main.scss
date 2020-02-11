@@ -3,7 +3,7 @@
   // Default Colours //
   /*=========================================================================*/
 
-  $color-white-trans: rgba(255, 255, 255, 0.9);
+  $color-white-trans: rgba(255, 255, 255, 0.6);
   $color-darkblue-trans: rgba(30,37,52,.9);
 
   /*=========================================================================*/
@@ -87,6 +87,11 @@
       &.router-link-exact-active {
         color: #42b983;
       }
+    }
+
+    .navlink {
+      padding: 0 1.5rem;
+      text-transform: uppercase;
     }
   }
 

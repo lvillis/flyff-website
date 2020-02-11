@@ -1,7 +1,7 @@
 <template>
-  <div class="about">
+  <div class="download">
     <div class="banner">
     </div>
-    <h1>This is an about page</h1>
+    <h1>This is an Download page</h1>
   </div>
 </template>
