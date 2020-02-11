@@ -3,8 +3,9 @@
   // Default Colours //
   /*=========================================================================*/
 
-  $color-white-trans: rgba(255, 255, 255, 0.6);
+  $color-white-trans: rgba(255, 255, 255, 0.4);
   $color-darkblue-trans: rgba(30,37,52,.9);
+  $color-red:rgb(217,43, 46);
 
   /*=========================================================================*/
 
@@ -16,7 +17,11 @@
 
   body {
     font-family: 'Roboto', sans-serif;
-    background-color: $color-white-trans;
+    background-color: white;
+  }
+
+  h1 {
+    font-size: 30px;
   }
 
   h3 {
@@ -35,6 +40,7 @@
 
   a {
     color: #42b983;
+    text-decoration: none;
   }
 
 
@@ -42,15 +48,39 @@
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
     color: #2c3e50;
+  }
 
-    height: 1900px;
+  .btn-primary {
+    background-color: $color-red;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    border: 1px solid $color-red;
+    color: white;
+    padding: 0.45rem 1.5rem;
+
+    &:hover {
+      background-color: darken($color-red, $amount: 10);
+      border-color: darken($color-red, $amount: 10);
+    }
+
+    &:focus {
+      background-color: darken($color-red, $amount: 10);
+      border-color: darken($color-red, $amount: 10);
+      box-shadow: none;
+    }
+  }
+
+  .btn-primary:not(:disabled):not(.disabled):active {
+    background-color: darken($color-red, $amount: 10);
+    border-color: darken($color-red, $amount: 10);
   }
 
   /* Large desktop */
   @media (min-width: 1200px) {
-
+      .container {
+        max-width: 1350px;
+      }
   }
 
   /* Desktop */
@@ -73,36 +103,46 @@
   /*=========================================================================*/
 
   #nav {
-    padding: 30px;
+    padding: 20px 0;
     width: 100%;
     background-color: $color-white-trans;
     position: fixed;
     top: 0;
 
+    z-index: 99;
+
 
     a {
       font-weight: bold;
-      color: #2c3e50;
+      color: #34424f;
+      text-decoration: none;
 
       &.router-link-exact-active {
-        color: #42b983;
+        color: $color-red;
+        font-weight: 600;
+      }
+
+      &.hover {
+        color: orange!important;
       }
     }
 
     .navlink {
       padding: 0 1.5rem;
       text-transform: uppercase;
+      font-size: 1rem;
+      font-weight: 700;
     }
   }
 
   .banner {
     width: 100%;
-    height: 60vh;
+    height: 70vh;
 
-    background-image: url("./images/pinkBeanBG.jpg");
+    background-image: url("./images/flyffbanner_custom_updated.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center 42%;
   }
 
   /* Large desktop */
@@ -132,6 +172,11 @@
 
   // Page Template Styles //
   /*=========================================================================*/
+
+
+  .mainContent {
+    padding: 2.5rem 0;
+  }
 
   /* Large desktop */
   @media (min-width: 1200px) {
