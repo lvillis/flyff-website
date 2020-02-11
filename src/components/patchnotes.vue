@@ -4,6 +4,8 @@
             <h1 class="card-title">{{ patchTitle }}</h1>
         </div>
         <div class="card-body">
+        
+            <img src="../assets/images/patchup-696-344.jpg">
             <p class="card-text">{{ patchDesc}}</p>
         </div>
         <div class="card-footer text-muted">
@@ -28,6 +30,7 @@ export default {
 <style lang="scss" scoped>
 .card {
     margin: 2rem 0;
+    border-radius: 8px;
 
      &:first-child {
          margin-top: 0;   
@@ -38,11 +41,13 @@ export default {
             margin: 0;
         }
     }
+
     .card-body {
-        .card-title {
-            h1 {
-                margin: 0;
-            }
+      
+
+        img {
+            margin-bottom: 1rem;
+            width: 100%;
         }
         .card-text, p {
             color: #858585;
