@@ -20,7 +20,7 @@
    
 
     <div class="footer card-footer">
-      <div class="container">
+      <div class="container text-right">
         <p class="pt-2">
           Site by Vista Copyright @ 2020
         </p>

@@ -1,15 +1,24 @@
 <template>
     <div class="card">
-        <div class="card-header">
-            <h1 class="card-title">{{ patchTitle }}</h1>
+        <div class="card-header text-right">
+
+            <div class="badge badge-hotfix">{{ patchFlagTitle}}</div>
+
         </div>
         <div class="card-body">
-        
-            <img src="../assets/images/patchup-696-344.jpg">
+            <h1 class="card-title">{{ patchTitle }}</h1>
             <p class="card-text">{{ patchDesc}}</p>
         </div>
         <div class="card-footer text-muted">
-            Post Date: {{ patchDate}}
+            <div class="row">
+                <div class="col-8">
+                    Post Date: {{ patchDate}}
+                </div>
+                <div class="col-4 text-right color-red read-more">
+                    <a href="/">Read More <i class="fas fa-caret-right pl-1"></i></a>
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -22,7 +31,9 @@ export default {
   props: {
     patchTitle: String,
     patchDate: Date,
-    patchDesc: String
+    patchDesc: String,
+    patchFlagTitle: String,
+    patchFlagColor: String
   }
 }
 </script>
@@ -36,9 +47,19 @@ export default {
          margin-top: 0;   
     }
     .card-header {
-        background: none;
-        h1 {
-            margin: 0;
+        background-image: url("../assets/images/patchnote_banner.jpg");
+        height: 200px;
+        background-position: center;
+
+        .badge {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            padding: 0.40rem 1.4rem;
+
+        }
+
+        .badge-hotfix {
+            background-color: rgb(217,43, 46);
+            color: white;
         }
     }
 
@@ -49,12 +70,26 @@ export default {
             margin-bottom: 1rem;
             width: 100%;
         }
+
+        h1 {
+            font-size: 23px;
+        }
         .card-text, p {
             color: #858585;
         }
     }
     .card-footer {
         font-size: 12px;
+
+        .read-more {
+            a {
+                color: rgb(217,43, 46);
+            }
+
+            .fas {
+                font-size: 0.8rem;
+            }
+        }
     }
 }
 </style>
