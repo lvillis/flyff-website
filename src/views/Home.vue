@@ -154,10 +154,37 @@
                   </div>
               </div>
           </div>
-
            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
-    <polygon fill="white" points="0,100 100,0 100,100"/>
-  </svg>
+           <polygon fill="white" points="0,100 100,0 100,100"/>
+           </svg>
+      </div>
+
+      <div class="container margin-top pt-5">
+          <h1 class="mb-1"><i class="fas fa-scroll"></i> Rules & <span class="color-red">Regulations</span></h1>
+          <p>
+              Please farmilirise yourself with these rules
+          </p>
+          <div class="border-div"></div>
+
+          <div class="row">
+              <div class="col-md-6">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At optio in autem quasi officiis repellendus modi excepturi expedita, cumque dolorum, illo, ipsam ipsa. Nisi voluptas mollitia commodi ratione iste temporibus dolore ullam pariatur? Alias minus eum excepturi, aspernatur perferendis ullam expedita, reprehenderit ex odio eligendi molestiae voluptate? Reprehenderit, error. Tempore!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At optio in autem quasi officiis repellendus modi excepturi expedita, cumque dolorum, illo, ipsam ipsa. Nisi voluptas mollitia commodi ratione iste temporibus dolore ullam pariatur? Alias minus eum excepturi, aspernatur perferendis ullam expedita, reprehenderit ex odio eligendi molestiae voluptate? Reprehenderit, error. Tempore!
+                </p>
+              </div>
+              <div class="col-md-6">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At optio in autem quasi officiis repellendus modi excepturi expedita, cumque dolorum, illo, ipsam ipsa. Nisi voluptas mollitia commodi ratione iste temporibus dolore ullam pariatur? Alias minus eum excepturi, aspernatur perferendis ullam expedita, reprehenderit ex odio eligendi molestiae voluptate? Reprehenderit, error. Tempore!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At optio in autem quasi officiis repellendus modi excepturi expedita, cumque dolorum, illo, ipsam ipsa. Nisi voluptas mollitia commodi ratione iste temporibus dolore ullam pariatur? Alias minus eum excepturi, aspernatur perferendis ullam expedita, reprehenderit ex odio eligendi molestiae voluptate? Reprehenderit, error. Tempore!
+                </p>
+              </div>
+          </div>
+          
       </div>
 
      
