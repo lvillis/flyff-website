@@ -11,16 +11,23 @@
             <router-link to="/download" class="navlink">Download</router-link>
           </div>
           <div class="col-md-4 text-md-right">
-            <button class="btn btn-primary">Login</button>
+            <span class="language">English <i class="fas fa-caret-down"></i></span>
 
-            <Login></Login>
+            <button class="btn btn-primary" v-on:click="isActive = !isActive">Login</button>
+
+            <transition name="bounce">
+                <Login v-show="isActive"></Login>
+            </transition>
+           
           </div>
         </div>
 
 
       </div>
     </div>
+    
       <router-view/>
+      
    
 
     <div class="footer card-footer">
@@ -40,17 +47,61 @@
   export default {
     name: 'Home',
     components: {
-      Login
-    }
+      Login 
+    },
+      data() {
+        return {
+          isActive: false,
+      }
+    },
+      mounted() {
+     var nav = document.querySelector('#nav');
+
+      window.addEventListener('scroll', function(event) {
+          event.preventDefault();
+
+          if (window.scrollY <= 300) { 
+              nav.style.backgroundColor = 'rgba(255, 255, 255, 0.4)'; 
+              nav.style.padding = '20px';
+          } else {
+              nav.style.backgroundColor = 'rgba(255, 255, 255, 0.9)';
+              nav.style.padding = '8px';
+          }
+      });
+  }
   }
 </script>
 
 <style lang="scss" scoped>
+  .bounce-enter-active {
+    animation: bounce-in .5s;
+  }
+  .bounce-leave-active {
+    animation: bounce-in .5s reverse;
+  }
+  @keyframes bounce-in {
+    0% {
+      transform: scale(0);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .language {
+    font-weight: 700;
+    padding-right: 2rem;
+
+    .fas {
+      padding-left: 0.5rem;
+    }
+  }
 
 
   .login-container {
-
-
     #login {
       position: absolute;
       top: 80px;

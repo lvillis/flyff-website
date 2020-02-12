@@ -64,6 +64,7 @@ h2 {
   justify-content: center;
   width: 100%;
   min-height: 100%;
+  
 }
 
 #formContent {
@@ -76,6 +77,9 @@ h2 {
   border-radius: 5px;
   border: 1px solid rgba(0,0,0,.125);
   text-align: center;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 #formFooter {
@@ -147,7 +151,7 @@ input[type=text] {
 
 input[type=text]:focus {
   background-color: #fff;
-  border-bottom: 2px solid #5fbae9;
+  border-bottom: 2px solid rgb(217,43, 46);
 }
 
 input[type=text]:placeholder {
@@ -162,7 +166,7 @@ input[type=text]:placeholder {
   bottom: -10px;
   width: 0;
   height: 2px;
-  background-color: #56baed;
+  background-color: rgb(217,43, 46);
   content: "";
   transition: width 0.2s;
 }
