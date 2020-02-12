@@ -48,12 +48,27 @@ export default {
     }
     .card-header {
         background-image: url("../assets/images/patchnote_banner.jpg");
+        background-size: cover;
         height: 200px;
         background-position: center;
+        position: relative;
+
+        &:after {
+            position: absolute;
+            content: ' ';
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+
+            background-color: rgba(0, 0, 0, 0.2);
+        }
 
         .badge {
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             padding: 0.40rem 1.4rem;
+            position: relative;
+            z-index: 10;
 
         }
 
@@ -90,6 +105,29 @@ export default {
                 font-size: 0.8rem;
             }
         }
+    }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+}
+
+/* Desktop */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    .card {
+        margin: 1rem 0;
+        border-radius: 8px;
     }
 }
 </style>

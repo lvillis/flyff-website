@@ -2,7 +2,7 @@
   <div id="app">
 
     <div id="nav">
-      <div class="container">
+      <div class="container login-container">
         <div class="row align-items-center">
           <div class="col-md-8">
             <router-link to="/" class="navlink">Home</router-link>
@@ -12,8 +12,12 @@
           </div>
           <div class="col-md-4 text-md-right">
             <button class="btn btn-primary">Login</button>
+
+            <Login></Login>
           </div>
         </div>
+
+
       </div>
     </div>
       <router-view/>
@@ -28,3 +32,31 @@
     </div>
   </div>
 </template>
+
+<script>
+  // @ is an alias to /src
+  import Login from './components/login-sidebar.vue'
+
+  export default {
+    name: 'Home',
+    components: {
+      Login
+    }
+  }
+</script>
+
+<style lang="scss" scoped>
+
+
+  .login-container {
+
+
+    #login {
+      position: absolute;
+      top: 80px;
+      right: 0;
+
+    }
+  }
+
+</style>

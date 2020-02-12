@@ -13,7 +13,7 @@
 
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-3 rates-col">
+                <div class="col-md-3 rates-col">
                     <a href="#/register"></a>
                     <i class="fas fa-user-plus"></i>
                     <h1>Register</h1>
@@ -21,7 +21,7 @@
                         Register your web account
                     </p>
                 </div>
-                <div class="col-3 rates-col">
+                <div class="col-md-3 rates-col">
                     <a href="#/download"></a>
                     <i class="fas fa-download"></i>
                     <h1>Download</h1>
@@ -29,7 +29,7 @@
                         For the latest redux client
                     </p>
                 </div>
-                <div class="col-3 rates-col">
+                <div class="col-md-3 rates-col">
                     <a href="#/discord"></a>
                     <i class="fas fa-comments"></i>
                     <h1>Community</h1>
@@ -162,5 +162,35 @@ p {
             transition: 200ms ease-in-out;
         }
     }
+
+    /* Large desktop */
+    @media (min-width: 1200px) {
+        .container {
+            max-width: 1350px;
+        }
+    }
+
+    /* Desktop */
+    @media (min-width: 992px) and (max-width: 1199px) {
+
+        .rates-col {
+            margin: 1rem;
+        }
+    }
+
+    /* Portrait tablet to landscape and desktop */
+    @media (min-width: 768px) and (max-width: 991px) {
+        .rates-col {
+            margin: 1rem;
+        }
+    }
+
+    /* Landscape phone to portrait tablet */
+    @media (max-width: 767px) {
+        .rates-col {
+            margin: 1rem;
+        }
+    }
+
 
 </style>
