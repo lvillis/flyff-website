@@ -1,12 +1,13 @@
 <template>
   <div id="app">
 
+
     <div id="nav">
       <div class="container login-container">
         <div class="row align-items-center">
           <div class="col-md-8">
             <router-link to="/" class="navlink">Home</router-link>
-            <router-link to="/about" class="navlink">About</router-link>
+            <router-link to="/features" class="navlink">Features</router-link>
             <router-link to="/register" class="navlink">Register</router-link>
             <router-link to="/download" class="navlink">Download</router-link>
           </div>
@@ -15,7 +16,7 @@
 
             <button class="btn btn-primary" v-on:click="isActive = !isActive">Login</button>
 
-            <transition name="bounce">
+            <transition name="fade">
                 <Login v-show="isActive"></Login>
             </transition>
            
@@ -25,8 +26,8 @@
 
       </div>
     </div>
-    
-      <router-view/>
+
+     <router-view/>
       
    
 
@@ -51,7 +52,7 @@
     },
       data() {
         return {
-          isActive: false,
+          isActive: false
       }
     },
       mounted() {

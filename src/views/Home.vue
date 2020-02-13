@@ -36,7 +36,7 @@
                 </div>
             </div>
         </div>
-      <div class="container margin-top">
+      <div class="container mt-5">
         <div class="row">
           <div class="col-12">
               <div class="row no-gutters align-items-center">
@@ -75,7 +75,7 @@
       </div>
 
       <div class="rankings margin-top">
-          <div class="container pt-md-5">
+          <div class="container pt-md-3">
                 <div class="row align-items-center justify-content-center">
                     <div class="col-xl-5 text-center siege-title">
                         <i class="fas fa-dragon"></i>

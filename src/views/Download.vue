@@ -93,6 +93,16 @@
               This issue is commonly caused by missing pre-requisites. Please make sure to download all <a href="/">pre-requirements here</a> for our patcher to be able to work on your system.
             </p>
           </div>
+          <div class="col-md-3 patch-col">
+            <p>
+              <b class="text-warning">Issue:</b> <br>My patcher is showeing Error: System.IO.IOExceptions
+            </p>
+            <p>
+              <b class="text-success">Answer:</b><br>
+              You may have installed Redux Flyff while your windows defender is on, This can often cause issues and will stop the installer from extracting important files for the client to work. Uninstall and reinstall with your defender switched off.
+
+            </p>
+          </div>
         </div>
       </div>
 
