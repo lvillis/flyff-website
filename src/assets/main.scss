@@ -6,6 +6,7 @@
   $color-white-trans: rgba(255, 255, 255, 0.4);
   $color-darkblue-trans: rgba(30,37,52,.9);
   $color-red:rgb(217,43, 46);
+  $color-green: #06c258;
 
   /*=========================================================================*/
 
@@ -42,12 +43,20 @@
   }
 
   a {
-    color: #42b983;
+    color: $color-red;
     text-decoration: none;
+
+    &:hover {
+      color: darken($color-red, 15%)
+    }
   }
 
   .color-red {
     color: $color-red;
+  }
+
+  .color-green {
+  color: $color-green;
   }
 
   .scrolling {
@@ -89,6 +98,14 @@
   .btn-primary:not(:disabled):not(.disabled):active {
     background-color: darken($color-red, $amount: 10);
     border-color: darken($color-red, $amount: 10);
+  }
+
+  .border-div {
+    width: 15%;
+    height: 1px;
+    border-radius: 10px;
+    background-color: rgba(30,37,52,.5);
+    margin-bottom: 2rem;
   }
 
   /* Large desktop */

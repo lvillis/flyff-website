@@ -27,7 +27,7 @@
                     </p>
                 </div>
                 <div class="col-md-3 rates-col">
-                    <a href="#/discord"></a>
+                    <a href="https://discord.gg/9rQBMx2" target="_blank"></a>
                     <i class="fab fa-discord"></i>
                     <h1>Community</h1>
                     <p>
@@ -231,6 +231,8 @@ p {
     position: relative;
     padding: 3rem 0;
 
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+
     .container {
         position: relative;
         z-index: 5;
@@ -339,17 +341,6 @@ p {
       }  
   }
 
-
-
-
-
-.border-div {
-  width: 15%;
-  height: 1px;
-  border-radius: 10px;
-  background-color: rgba(30,37,52,.5); 
-  margin-bottom: 2rem;
-}
 
     .rates-col {
         margin: 2rem;
