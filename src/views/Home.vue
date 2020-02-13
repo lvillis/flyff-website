@@ -162,7 +162,7 @@
       <div class="container margin-top pt-5">
           <h1 class="mb-1"><i class="fas fa-scroll"></i> Rules & <span class="color-red">Regulations</span></h1>
           <p>
-              Please farmilirise yourself with these rules
+              Please familiarize yourself with these rules
           </p>
           <div class="border-div"></div>
 

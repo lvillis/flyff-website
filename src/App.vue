@@ -16,7 +16,7 @@
 
             <button class="btn btn-primary" v-on:click="isActive = !isActive">Login</button>
 
-            <transition name="fade">
+            <transition name="bounce">
                 <Login v-show="isActive"></Login>
             </transition>
            
